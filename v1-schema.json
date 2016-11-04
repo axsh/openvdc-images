@@ -1,4 +1,5 @@
 {
+  "id": "https://raw.githubusercontent.com/openvdc/images/master/v1-schema.json#",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "description": "Multi-Hypervisor Machine Image Description.",
   "type": "object",
