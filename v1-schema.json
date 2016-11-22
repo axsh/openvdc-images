@@ -16,7 +16,11 @@
         "type": "object",
         "properties": {
           "hypervisor": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "null",
+              "lxc"
+            ]
           },
           "download_url": {
             "type": "string",
@@ -27,7 +31,15 @@
           },
           "checksum": {
             "type": "string"
-          }
+          },
+          "minimum_vcpu": {
+            "type": "integer",
+            "default": 1
+          },
+          "minimum_memory_gb": {
+            "type": "integer",
+            "default": 1
+          }          
         },
         "required": [
           "hypervisor",
